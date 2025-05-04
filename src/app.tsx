@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider, ThemeToggleButton } from "./components/ThemeToggle";
+import Wireframe from "./pages/Wireframe";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/portifolio-eduarda" element={<Index />} />
+              <Route path="/wireframe" element={<Wireframe />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <ThemeToggleButton />
