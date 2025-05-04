@@ -18,5 +18,5 @@ export default defineConfig(({ mode, command }) => ({
     outDir: "dist",
     assetsDir: "assets",
   },
-  base: command === "build" ? "/portifolioEduarda/" : "/",
+  base: command === "build" ? "/portifolio-eduarda/" : "/",
 }));
