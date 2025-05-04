@@ -4,17 +4,17 @@ const About: React.FC = () => {
   return (
     <section
       id="sobre"
-      className="bg-white relative overflow-hidden py-24 md:py-32"
+      className="bg-background dark:bg-gray-900 relative overflow-hidden py-24 md:py-32 transition-colors"
     >
-      <div className="absolute top-0 right-0 w-64 h-64 bg-purple-light rounded-full -mr-32 -mt-32 opacity-30"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-light rounded-full -ml-32 -mb-32 opacity-30"></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-purple-light dark:bg-purple-dark rounded-full -mr-32 -mt-32 opacity-30"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-light dark:bg-purple-dark rounded-full -ml-32 -mb-32 opacity-30"></div>
 
       <div className="container mx-auto px-6 relative">
         <h2 className="section-title">Sobre</h2>
 
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div className="w-full md:w-1/3 flex justify-center md:justify-start">
-            <div className="rounded-full overflow-hidden w-64 h-64 border-4 border-purple shadow-lg">
+            <div className="rounded-full overflow-hidden w-64 h-64 border-4 border-purple dark:border-purple-light shadow-lg">
               <img
                 src={import.meta.env.VITE_API_URL + "/image.png"}
                 alt="Eduarda Siqueira de Moura"
@@ -23,12 +23,14 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="w-full md:w-2/3">
-            <h3 className="text-2xl font-semibold text-purple-dark mb-4">
+            <h3 className="text-2xl font-semibold text-purple-darker dark:text-purple-light mb-4">
               Olá, meu nome é{" "}
-              <span className="text-purple">Eduarda Siqueira de Moura</span>
+              <span className="text-purple dark:text-purple-light">
+                Eduarda Siqueira de Moura
+              </span>
             </h3>
 
-            <div className="text-gray-700 space-y-4">
+            <div className="text-foreground dark:text-gray-300 space-y-4">
               <p>
                 Tenho 21 anos e atualmente estou cursando o 7° semestre de
                 Ciência da Computação na UNIJUÍ. Atuo como bolsista em Open

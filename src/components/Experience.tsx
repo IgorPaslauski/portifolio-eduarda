@@ -47,7 +47,10 @@ const Experience: React.FC = () => {
   }, [experiences]);
 
   return (
-    <section id="experiencia" className="bg-gray-50 py-20">
+    <section
+      id="experiencia"
+      className="bg-secondary dark:bg-gray-800 py-20 transition-colors"
+    >
       <div className="container mx-auto px-6">
         <h2 className="section-title">Experiência Profissional</h2>
         <div className="space-y-8">
@@ -61,19 +64,23 @@ const Experience: React.FC = () => {
               }}
             >
               <div className="flex flex-col md:flex-row md:items-center mb-4">
-                <h3 className="text-xl font-semibold text-purple-dark">
+                <h3 className="text-xl font-semibold text-purple-darker dark:text-purple-light">
                   {exp.company}
                 </h3>
-                <span className="md:mx-3 hidden md:block">•</span>
-                <span className="text-purple font-medium">{exp.title}</span>
+                <span className="md:mx-3 hidden md:block text-foreground dark:text-gray-300">
+                  •
+                </span>
+                <span className="text-purple dark:text-purple-light font-medium">
+                  {exp.title}
+                </span>
               </div>
 
-              <div className="flex items-center mb-4 text-gray-600">
+              <div className="flex items-center mb-4 text-muted-foreground dark:text-gray-400">
                 <Calendar className="w-4 h-4 mr-2" />
                 <span>{exp.period}</span>
               </div>
 
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <ul className="list-disc list-inside space-y-2 text-foreground dark:text-gray-300">
                 {exp.description.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
