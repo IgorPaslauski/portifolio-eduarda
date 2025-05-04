@@ -1,0 +1,22 @@
+[
+    {
+        "company": "Compass UOL",
+        "title": "Programa de Open Finance (Bolsista)",
+        "period": "Fev/2025 - Atual",
+        "description": [
+            "Participação em programa intensivo voltado à formação em JavaScript e Inteligência Artificial.",
+            "Estudo e aplicação de ferramentas como JavaScript, SQL e AWS.",
+            "Uso de metodologias ágeis (Scrum) para entrega de sprints semanais."
+        ]
+    },
+    {
+        "company": "VGI Informática",
+        "title": "Estágio Técnico em Informática",
+        "period": "Set/2021 - Dez/2021",
+        "description": [
+            "Assistência técnica remota em software de vendas.",
+            "Auxílio e cadastro de produtos e soluções de vendas.",
+            "Atendimento ao cliente."
+        ]
+    }
+]

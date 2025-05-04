@@ -1,0 +1,46 @@
+{
+    "technical": [
+        {
+            "name": "HTML",
+            "level": 90,
+            "icon": "html"
+        },
+        {
+            "name": "CSS",
+            "level": 85,
+            "icon": "css"
+        },
+        {
+            "name": "JavaScript",
+            "level": 80,
+            "icon": "js"
+        },
+        {
+            "name": "NodeJS",
+            "level": 75,
+            "icon": "nodejs"
+        },
+        {
+            "name": "PostgreSQL",
+            "level": 70,
+            "icon": "postgresql"
+        }
+    ],
+    "soft": [
+        {
+            "name": "Boa comunicação"
+        },
+        {
+            "name": "Comprometimento"
+        },
+        {
+            "name": "Trabalho em equipe"
+        },
+        {
+            "name": "Criatividade"
+        },
+        {
+            "name": "Proatividade"
+        }
+    ]
+}

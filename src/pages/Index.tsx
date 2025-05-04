@@ -8,29 +8,6 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index: React.FC = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll(".experience-card").forEach((card) => {
-      observer.observe(card);
-    });
-
-    return () => {
-      document.querySelectorAll(".experience-card").forEach((card) => {
-        observer.unobserve(card);
-      });
-    };
-  }, []);
-
   return (
     <>
       <Helmet>
@@ -82,7 +59,7 @@ const Index: React.FC = () => {
                   <div className="absolute inset-0 bg-purple rounded-full opacity-20 blur-xl transform -translate-x-4 translate-y-4"></div>
                   <div className="rounded-full overflow-hidden w-64 h-64 border-4 border-white shadow-xl relative z-10">
                     <img
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3"
+                      src="/image.png"
                       alt="Eduarda Siqueira de Moura"
                       className="w-full h-full object-cover"
                     />
