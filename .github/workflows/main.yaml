@@ -31,7 +31,7 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: List src directory
         run: ls -l src/
       - name: Build
