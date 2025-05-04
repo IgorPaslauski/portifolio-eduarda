@@ -13,7 +13,9 @@ const Experience: React.FC = () => {
 
   useEffect(() => {
     const fetchExperiences = async () => {
-      const response = await fetch("/experiences.json");
+      const response = await fetch(
+        import.meta.env.VITE_API_URL + "/experiences.json"
+      );
       const data: ExperienceItem[] = await response.json();
       setExperiences(data);
     };

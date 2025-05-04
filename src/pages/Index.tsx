@@ -59,7 +59,7 @@ const Index: React.FC = () => {
                   <div className="absolute inset-0 bg-purple rounded-full opacity-20 blur-xl transform -translate-x-4 translate-y-4"></div>
                   <div className="rounded-full overflow-hidden w-64 h-64 border-4 border-white shadow-xl relative z-10">
                     <img
-                      src="/image.png"
+                      src={import.meta.env.VITE_API_URL + "/image.png"}
                       alt="Eduarda Siqueira de Moura"
                       className="w-full h-full object-cover"
                     />

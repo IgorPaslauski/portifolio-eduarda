@@ -2,7 +2,10 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section id="sobre" className="bg-white relative overflow-hidden py-24 md:py-32">
+    <section
+      id="sobre"
+      className="bg-white relative overflow-hidden py-24 md:py-32"
+    >
       <div className="absolute top-0 right-0 w-64 h-64 bg-purple-light rounded-full -mr-32 -mt-32 opacity-30"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-light rounded-full -ml-32 -mb-32 opacity-30"></div>
 
@@ -13,7 +16,7 @@ const About: React.FC = () => {
           <div className="w-full md:w-1/3 flex justify-center md:justify-start">
             <div className="rounded-full overflow-hidden w-64 h-64 border-4 border-purple shadow-lg">
               <img
-                src="/image.png"
+                src={import.meta.env.VITE_API_URL + "/image.png"}
                 alt="Eduarda Siqueira de Moura"
                 className="w-full h-full object-cover"
               />

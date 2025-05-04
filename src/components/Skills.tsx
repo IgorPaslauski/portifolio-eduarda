@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
 
   useEffect(() => {
     const fetchSkills = async () => {
-      const response = await fetch("/skills.json");
+      const response = await fetch(import.meta.env.VITE_API_URL + "/skills.json");
       const data = await response.json();
       setSoftSkills(data.soft);
       setTechnicalSkills(
