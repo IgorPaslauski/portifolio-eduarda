@@ -2,14 +2,19 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
 import { ThemeProvider, ThemeToggleButton } from "./components/ThemeToggle";
-import Wireframe from "./pages/Wireframe";
+import { AppRoutes } from "./routes";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: 1
+    }
+  }
+});
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -19,16 +24,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/portifolio-eduarda" element={<Index />} />
-              <Route
-                path="/portifolio-eduarda/wireframe"
-                element={<Wireframe />}
-              />
-              <Route path="/wireframe" element={<Wireframe />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <AppRoutes />
             <ThemeToggleButton />
           </BrowserRouter>
         </TooltipProvider>
