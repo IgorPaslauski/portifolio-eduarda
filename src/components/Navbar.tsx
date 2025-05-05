@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     { name: 'Experiência', href: '#experiencia' },
     { name: 'Habilidades', href: '#habilidades' },
     { name: 'Contato', href: '#contato' },
-    { name: 'Wireframe', href: '/wireframe' }
+    { name: 'Wireframe', href: import.meta.env.VITE_API_URL + '/wireframe' }
   ];
 
   return (

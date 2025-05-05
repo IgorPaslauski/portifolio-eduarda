@@ -39,7 +39,7 @@ const Skills: React.FC = () => {
     };
 
     fetchSkills();
-  });
+  }, []);
 
   return (
     <section
