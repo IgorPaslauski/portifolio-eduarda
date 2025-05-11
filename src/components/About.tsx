@@ -13,15 +13,7 @@ const About: React.FC = () => {
         <h2 className="section-title">Sobre</h2>
 
         <div className="flex flex-col md:flex-row gap-10 items-center">
-          <div className="w-full md:w-1/3 flex justify-center md:justify-start">
-            <div className="rounded-full overflow-hidden w-64 h-64 border-4 border-purple dark:border-purple-light shadow-lg">
-              <img
-                src={import.meta.env.VITE_API_URL + "/image.png"}
-                alt="Eduarda Siqueira de Moura"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+          
           <div className="w-full md:w-2/3">
             <h3 className="text-2xl font-semibold text-purple-darker dark:text-purple-light mb-4">
               Olá, meu nome é{" "}
@@ -33,13 +25,13 @@ const About: React.FC = () => {
             <div className="text-foreground dark:text-gray-300 space-y-4">
               <p>
                 Tenho 21 anos e atualmente estou cursando o 7° semestre de
-                Ciência da Computação na UNIJUÍ. Atuo como bolsista em Open
+                Ciência da Computação na UNIJUÍ. <br />Atuo como bolsista em Open
                 Finance no programa de bolsas da Compass UOL.
               </p>
 
               <p>
                 Meu interesse por tecnologia surgiu ainda no ensino médio,
-                durante o curso técnico em Informática. Foi nessa fase que tive
+                durante o curso técnico em Informática. <br />Foi nessa fase que tive
                 meu primeiro contato com lógica de programação e desenvolvimento
                 web — e não demorou para que o front-end se tornasse minha
                 principal área de interesse.
