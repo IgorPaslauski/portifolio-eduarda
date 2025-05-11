@@ -7,8 +7,6 @@ export const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Index />} />
     <Route path="/portifolio-eduarda" element={<Index />} />
-    <Route path="/portifolio-eduarda/wireframe" element={<Wireframe />} />
-    <Route path="/wireframe" element={<Wireframe />} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
